@@ -1,8 +1,7 @@
-**Problem:**
-
+##Problem:
 A vending machine needs to manage different states, including "Idle", "ItemSelected", "Dispensing", and "OutOfOrder". Each state has specific rules and restrictions regarding allowed operations, and the vending machine has associated attributes like item inventory and balance.
 
-**Requirements:**
+### Requirements:
 
 1. **Idle State:**  
    * Allow item selection. 
@@ -16,9 +15,10 @@ A vending machine needs to manage different states, including "Idle", "ItemSelec
 4. **OutOfOrder State:**  
    * Disallow all operations.
 
-**Current System:** The system currently relies on conditional statements within the VendingMachine class to check the machine state and determine valid actions. This approach becomes cumbersome and error-prone as the number of states and their associated logic grows.
+### Current System:
+The system currently relies on conditional statements within the VendingMachine class to check the machine state and determine valid actions. This approach becomes cumbersome and error-prone as the number of states and their associated logic grows.
 
-**Implement the State Pattern to improve code maintainability and flexibility:**
+### Implement the State Pattern to improve code maintainability and flexibility:
 
 1. **Define VendingMachine States:**  
    * Create separate classes representing different machine states: IdleState, ItemSelectedState, DispensingState, and OutOfOrderState.  
@@ -31,4 +31,15 @@ A vending machine needs to manage different states, including "Idle", "ItemSelec
    * Remove state-specific logic from the VendingMachine class.  
    * Introduce a reference to the current VendingMachineState object.  
    * Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
+
+### UML Diagram:
+
+![State Pattern Diagram](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/StatePattern-UML.png)
+
+### Sample Output:
+The following output demonstrates the behavior of the vending machine depending on its current state. Note the inability to perform any operations while the vending machine takes its time dispensing an item.
+
+![Sample Output1](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/Output1.png)
+![Sample Output2](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/Output2.png)
+![Sample Output3](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/Output3.png)
 
