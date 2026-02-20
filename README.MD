@@ -1,4 +1,4 @@
-##Problem:
+## Problem:
 A vending machine needs to manage different states, including "Idle", "ItemSelected", "Dispensing", and "OutOfOrder". Each state has specific rules and restrictions regarding allowed operations, and the vending machine has associated attributes like item inventory and balance.
 
 ### Requirements:
@@ -37,7 +37,7 @@ The system currently relies on conditional statements within the VendingMachine 
 ![State Pattern Diagram](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/StatePattern-UML.png)
 
 ### Sample Output:
-The following output demonstrates the behavior of the vending machine depending on its current state. Note the inability to perform any operations while the vending machine takes its time dispensing an item.
+The following output demonstrates the behavior of the vending machine depending on its current state. Note the inability to perform any operations while the vending machine takes its time dispensing an item. Additionally, a crude balance system is implemented through insertCoin method.
 
 ![Sample Output1](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/Output1.png)
 ![Sample Output2](https://github.com/fausturnacht/StatePattern2/blob/de0ae2a3f7ad62def5096934f3c953ef72ad54cb/Output2.png)
